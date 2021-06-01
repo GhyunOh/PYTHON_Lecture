@@ -1,0 +1,1471 @@
+<table class="table_develop3" summary="기상실황표로 지점, 날씨, 기온, 강수, 바람, 기압등을 안내한 표입니다.">
+<caption>기상실황표</caption>
+<colgroup>
+<col style="width:14%"/>
+<col style="width:12%"/>
+<col style="width:7%"/>
+<col style="width:5%"/>
+<col style="width:8%"/>
+<col style="width:5%"/>
+<col style="width:6%"/>
+<col style="width:5%"/>
+<col style="width:8%"/>
+<col style="width:5%"/>
+<col style="width:8%"/>
+<col style="width:6%"/>
+<col/>
+</colgroup>
+<thead>
+<tr class="table_header" id="table_header1">
+<th class="top_line" rowspan="2" scope="col">
+		지점
+		</th>
+<th class="top_line" colspan="4" id="headers-weather" scope="col">날씨</th>
+<th class="top_line" colspan="3" id="headers-temp" scope="col">기온(℃)</th>
+<th class="top_line" colspan="2" id="headers-rain" scope="col">강수</th>
+<th class="top_line" colspan="2" id="headers-wind" scope="col">바람</th>
+<th class="top_line" id="headers-press" scope="col">기압(hPa)</th>
+</tr>
+<tr class="table_header" id="table_header2">
+<th class="nm" headers="headers-weather" scope="col">현재일기 </th>
+<th class="nm" headers="headers-weather" scope="col">시정<br/>km</th>
+<th class="nm" headers="headers-weather" scope="col">운량<br/>1/10</th>
+<th class="nm" headers="headers-weather" scope="col">중하운량</th>
+<th class="nm" headers="headers-temp" scope="col">현재<br/>기온</th>
+<th class="nm" headers="headers-temp" scope="col">이슬점<br/>온도</th>
+<th class="nm" headers="headers-temp" scope="col">체감<br/>온도</th>
+<th class="nm" headers="headers-rain" scope="col">일강수<br/>mm</th>
+<th class="nm" headers="headers-rain" scope="col">습도<br/>%</th>
+<th class="nm" headers="headers-wind" scope="col">풍향 </th>
+<th class="nm" headers="headers-wind" scope="col">풍속<br/><script>writeWindSpeedUnit();</script></th>
+<th class="nm" headers="headers-press" scope="col">해면<br/>기압</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=105">강릉</a></td>
+<td> </td>
+<td>18.8</td>
+<td> </td>
+<td> </td>
+<td>24.9</td>
+<td>17.3</td>
+<td>26.1</td>
+<td>0.1</td>
+<td>63</td>
+<td>동북동</td>
+<td><script>writeWindSpeed('1.2', false, '', '', 1);</script></td>
+<td>1012.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=259">강진군</a></td>
+<td> </td>
+<td>15.0</td>
+<td> </td>
+<td> </td>
+<td>26.5</td>
+<td>11.4</td>
+<td>25.6</td>
+<td> </td>
+<td>39</td>
+<td>남남서</td>
+<td><script>writeWindSpeed('2.5', false, '', '', 1);</script></td>
+<td>1013.0</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=201">강화</a></td>
+<td> </td>
+<td>19.8</td>
+<td> </td>
+<td> </td>
+<td>20.5</td>
+<td>15.6</td>
+<td>22.5</td>
+<td>2.1</td>
+<td>74</td>
+<td>서</td>
+<td><script>writeWindSpeed('1.8', false, '', '', 1);</script></td>
+<td>1015.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=294">거제</a></td>
+<td> </td>
+<td>14.9</td>
+<td> </td>
+<td> </td>
+<td>26.2</td>
+<td>11.1</td>
+<td>25.3</td>
+<td> </td>
+<td>39</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('2.4', false, '', '', 1);</script></td>
+<td>1014.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=284">거창</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>25.4</td>
+<td>14.2</td>
+<td>25.5</td>
+<td> </td>
+<td>50</td>
+<td>동</td>
+<td><script>writeWindSpeed('1.3', false, '', '', 1);</script></td>
+<td>1013.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=283">경주시</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.8</td>
+<td>12.4</td>
+<td>26.1</td>
+<td> </td>
+<td>41</td>
+<td>남남서</td>
+<td><script>writeWindSpeed('3.5', false, '', '', 1);</script></td>
+<td>1014.0</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=185">고산</a></td>
+<td> </td>
+<td>19.9</td>
+<td> </td>
+<td> </td>
+<td>22.8</td>
+<td>19.3</td>
+<td>25.3</td>
+<td> </td>
+<td>81</td>
+<td>북북서</td>
+<td><script>writeWindSpeed('2.4', false, '', '', 1);</script></td>
+<td>1013.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=172">고창</a></td>
+<td> </td>
+<td>12.6</td>
+<td> </td>
+<td> </td>
+<td>28.5</td>
+<td>11.1</td>
+<td>27.0</td>
+<td> </td>
+<td>34</td>
+<td>남서</td>
+<td><script>writeWindSpeed('3.1', false, '', '', 1);</script></td>
+<td>1013.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=251">고창군</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>28.1</td>
+<td>11.6</td>
+<td>26.8</td>
+<td> </td>
+<td>36</td>
+<td>남</td>
+<td><script>writeWindSpeed('1.6', false, '', '', 1);</script></td>
+<td>1013.2</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=262">고흥</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.5</td>
+<td>10.2</td>
+<td>25.3</td>
+<td> </td>
+<td>36</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('2.1', false, '', '', 1);</script></td>
+<td>1013.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=266">광양시</a></td>
+<td> </td>
+<td>15.2</td>
+<td> </td>
+<td> </td>
+<td>27.0</td>
+<td>12.2</td>
+<td>26.2</td>
+<td> </td>
+<td>40</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('1.1', false, '', '', 1);</script></td>
+<td>1014.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=156">광주</a></td>
+<td>구름조금</td>
+<td>19.8</td>
+<td>5</td>
+<td>0</td>
+<td>28.1</td>
+<td>12.0</td>
+<td>26.9</td>
+<td> </td>
+<td>37</td>
+<td>남남서</td>
+<td><script>writeWindSpeed('1.1', false, '', '', 1);</script></td>
+<td>1013.3</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=279">구미</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.5</td>
+<td>13.5</td>
+<td>26.2</td>
+<td> </td>
+<td>45</td>
+<td>북북서</td>
+<td><script>writeWindSpeed('0.7', false, '', '', 1);</script></td>
+<td>1014.0</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=140">군산</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.5</td>
+<td>13.2</td>
+<td>26.1</td>
+<td> </td>
+<td>44</td>
+<td>북서</td>
+<td><script>writeWindSpeed('2.7', false, '', '', 1);</script></td>
+<td>1015.3</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=238">금산</a></td>
+<td> </td>
+<td>19.5</td>
+<td> </td>
+<td> </td>
+<td>26.3</td>
+<td>15.0</td>
+<td>26.4</td>
+<td> </td>
+<td>50</td>
+<td>북</td>
+<td><script>writeWindSpeed('1.3', false, '', '', 1);</script></td>
+<td>1013.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=253">김해시</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>27.1</td>
+<td>14.4</td>
+<td>26.8</td>
+<td> </td>
+<td>46</td>
+<td>남남서</td>
+<td><script>writeWindSpeed('2.2', false, '', '', 1);</script></td>
+<td>1014.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=247">남원</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.7</td>
+<td>11.9</td>
+<td>25.9</td>
+<td> </td>
+<td>40</td>
+<td>서북서</td>
+<td><script>writeWindSpeed('1.4', false, '', '', 1);</script></td>
+<td>1013.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=295">남해</a></td>
+<td> </td>
+<td>19.8</td>
+<td> </td>
+<td> </td>
+<td>25.1</td>
+<td>13.3</td>
+<td>25.1</td>
+<td> </td>
+<td>48</td>
+<td>북북동</td>
+<td><script>writeWindSpeed('2.3', false, '', '', 1);</script></td>
+<td>1014.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=100">대관령</a></td>
+<td> </td>
+<td>17.3</td>
+<td> </td>
+<td> </td>
+<td>21.0</td>
+<td>13.6</td>
+<td>22.2</td>
+<td>0.1</td>
+<td>63</td>
+<td>서북서</td>
+<td><script>writeWindSpeed('4.1', false, '', '', 1);</script></td>
+<td>1011.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=143">대구</a></td>
+<td>구름많음</td>
+<td>18.8</td>
+<td>7</td>
+<td>0</td>
+<td>26.4</td>
+<td>12.4</td>
+<td>25.8</td>
+<td> </td>
+<td>42</td>
+<td>북</td>
+<td><script>writeWindSpeed('2.0', false, '', '', 1);</script></td>
+<td>1013.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=133">대전</a></td>
+<td>구름많음</td>
+<td>20 이상</td>
+<td>8</td>
+<td>2</td>
+<td>26.4</td>
+<td>14.4</td>
+<td>26.3</td>
+<td>0.0</td>
+<td>48</td>
+<td>북</td>
+<td><script>writeWindSpeed('1.1', false, '', '', 1);</script></td>
+<td>1014.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=98">동두천</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>20.8</td>
+<td>17.7</td>
+<td>23.4</td>
+<td>2.8</td>
+<td>83</td>
+<td>북서</td>
+<td><script>writeWindSpeed('1.8', false, '', '', 1);</script></td>
+<td>1015.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=106">동해</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>19.1</td>
+<td>15.1</td>
+<td>21.3</td>
+<td> </td>
+<td>78</td>
+<td>남남동</td>
+<td><script>writeWindSpeed('2.1', false, '', '', 1);</script></td>
+<td>1012.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=165">목포</a></td>
+<td>맑음</td>
+<td>19.8</td>
+<td>0</td>
+<td>0</td>
+<td>27.1</td>
+<td>11.9</td>
+<td>26.2</td>
+<td> </td>
+<td>39</td>
+<td>남동</td>
+<td><script>writeWindSpeed('2.8', false, '', '', 1);</script></td>
+<td>1013.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=273">문경</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>23.8</td>
+<td>17.0</td>
+<td>25.2</td>
+<td> </td>
+<td>66</td>
+<td>북서</td>
+<td><script>writeWindSpeed('0.6', false, '', '', 1);</script></td>
+<td>1013.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=288">밀양</a></td>
+<td> </td>
+<td>18.8</td>
+<td> </td>
+<td> </td>
+<td>28.2</td>
+<td>12.1</td>
+<td>27.0</td>
+<td> </td>
+<td>37</td>
+<td>남남동</td>
+<td><script>writeWindSpeed('1.5', false, '', '', 1);</script></td>
+<td>1013.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=102">백령도</a></td>
+<td>약한 비 단속적</td>
+<td>2.7</td>
+<td>10</td>
+<td>5</td>
+<td>14.8</td>
+<td>14.3</td>
+<td>18.1</td>
+<td>21.8</td>
+<td>97</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('4.8', false, '', '', 1);</script></td>
+<td>1010.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=235">보령</a></td>
+<td> </td>
+<td>19.8</td>
+<td> </td>
+<td> </td>
+<td>26.0</td>
+<td>13.1</td>
+<td>25.7</td>
+<td> </td>
+<td>45</td>
+<td>서북서</td>
+<td><script>writeWindSpeed('0.6', false, '', '', 1);</script></td>
+<td>1014.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=258">보성군</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.2</td>
+<td>11.8</td>
+<td>25.5</td>
+<td> </td>
+<td>41</td>
+<td>남남서</td>
+<td><script>writeWindSpeed('1.3', false, '', '', 1);</script></td>
+<td>1013.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=226">보은</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>23.9</td>
+<td>14.5</td>
+<td>24.6</td>
+<td> </td>
+<td>56</td>
+<td>북동</td>
+<td><script>writeWindSpeed('1.3', false, '', '', 1);</script></td>
+<td>1014.3</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=271">봉화</a></td>
+<td> </td>
+<td>19.5</td>
+<td> </td>
+<td> </td>
+<td>21.7</td>
+<td>13.0</td>
+<td>22.5</td>
+<td> </td>
+<td>58</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('2.1', false, '', '', 1);</script></td>
+<td>1013.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=159">부산</a></td>
+<td>구름많음</td>
+<td>20 이상</td>
+<td>6</td>
+<td>0</td>
+<td>25.3</td>
+<td>9.5</td>
+<td>24.3</td>
+<td> </td>
+<td>37</td>
+<td>남동</td>
+<td><script>writeWindSpeed('3.7', false, '', '', 1);</script></td>
+<td>1013.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=243">부안</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>27.5</td>
+<td>13.0</td>
+<td>26.7</td>
+<td> </td>
+<td>41</td>
+<td>서</td>
+<td><script>writeWindSpeed('2.3', false, '', '', 1);</script></td>
+<td>1014.3</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=236">부여</a></td>
+<td> </td>
+<td>19.5</td>
+<td> </td>
+<td> </td>
+<td>26.9</td>
+<td>13.9</td>
+<td>26.5</td>
+<td> </td>
+<td>45</td>
+<td>서</td>
+<td><script>writeWindSpeed('2.2', false, '', '', 1);</script></td>
+<td>1015.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=104">북강릉</a></td>
+<td>구름많음</td>
+<td>12.4</td>
+<td>8</td>
+<td>2</td>
+<td>22.3</td>
+<td>17.2</td>
+<td>24.2</td>
+<td>0.6</td>
+<td>73</td>
+<td>북서</td>
+<td><script>writeWindSpeed('1.6', false, '', '', 1);</script></td>
+<td>1012.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=255">북창원</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>27.9</td>
+<td>12.6</td>
+<td>26.9</td>
+<td> </td>
+<td>39</td>
+<td>남</td>
+<td><script>writeWindSpeed('1.7', false, '', '', 1);</script></td>
+<td>1013.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=93">북춘천</a></td>
+<td>약한 비 단속적</td>
+<td>12.0</td>
+<td>10</td>
+<td>1</td>
+<td>21.4</td>
+<td>16.7</td>
+<td>23.5</td>
+<td>2.5</td>
+<td>75</td>
+<td>남</td>
+<td><script>writeWindSpeed('2.3', false, '', '', 1);</script></td>
+<td>1014.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=289">산청</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.0</td>
+<td>12.7</td>
+<td>25.6</td>
+<td> </td>
+<td>44</td>
+<td>동</td>
+<td><script>writeWindSpeed('2.5', false, '', '', 1);</script></td>
+<td>1014.0</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=137">상주</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>24.5</td>
+<td>16.2</td>
+<td>25.5</td>
+<td> </td>
+<td>60</td>
+<td>북동</td>
+<td><script>writeWindSpeed('0.8', false, '', '', 1);</script></td>
+<td>1014.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=189">서귀포</a></td>
+<td>맑음</td>
+<td>20 이상</td>
+<td>0</td>
+<td>0</td>
+<td>24.3</td>
+<td>20.2</td>
+<td>26.6</td>
+<td> </td>
+<td>78</td>
+<td>남</td>
+<td><script>writeWindSpeed('1.2', false, '', '', 1);</script></td>
+<td>1014.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=129">서산</a></td>
+<td> </td>
+<td>19.5</td>
+<td> </td>
+<td> </td>
+<td>25.2</td>
+<td>13.0</td>
+<td>25.1</td>
+<td> </td>
+<td>47</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('3.4', false, '', '', 1);</script></td>
+<td>1014.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=108">서울</a></td>
+<td>흐림</td>
+<td>20 이상</td>
+<td>9</td>
+<td>0</td>
+<td>23.7</td>
+<td>15.7</td>
+<td>24.7</td>
+<td>3.2</td>
+<td>61</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('3.0', false, '', '', 1);</script></td>
+<td>1014.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=188">성산</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>23.1</td>
+<td>18.4</td>
+<td>25.2</td>
+<td> </td>
+<td>75</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('3.1', false, '', '', 1);</script></td>
+<td>1014.3</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=239">세종</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>25.1</td>
+<td>13.9</td>
+<td>25.2</td>
+<td> </td>
+<td>50</td>
+<td>북서</td>
+<td><script>writeWindSpeed('2.3', false, '', '', 1);</script></td>
+<td>1014.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=90">속초</a></td>
+<td> </td>
+<td>5.3</td>
+<td> </td>
+<td> </td>
+<td>17.2</td>
+<td>15.3</td>
+<td>20.1</td>
+<td>0.3</td>
+<td>89</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('1.1', false, '', '', 1);</script></td>
+<td>1013.3</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=119">수원</a></td>
+<td>구름많음</td>
+<td>19.5</td>
+<td>6</td>
+<td>0</td>
+<td>25.1</td>
+<td>15.9</td>
+<td>25.8</td>
+<td>0.6</td>
+<td>57</td>
+<td>남서</td>
+<td><script>writeWindSpeed('3.4', false, '', '', 1);</script></td>
+<td>1014.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=254">순창군</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>27.7</td>
+<td>11.6</td>
+<td>26.5</td>
+<td> </td>
+<td>37</td>
+<td>남동</td>
+<td><script>writeWindSpeed('1.7', false, '', '', 1);</script></td>
+<td>1012.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=174">순천</a></td>
+<td> </td>
+<td>18.1</td>
+<td> </td>
+<td> </td>
+<td>27.0</td>
+<td>13.6</td>
+<td>26.6</td>
+<td> </td>
+<td>44</td>
+<td>동</td>
+<td><script>writeWindSpeed('2.6', false, '', '', 1);</script></td>
+<td>1012.8</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=136">안동</a></td>
+<td>구름많음</td>
+<td>17.9</td>
+<td>7</td>
+<td>0</td>
+<td>24.1</td>
+<td>13.6</td>
+<td>24.4</td>
+<td> </td>
+<td>52</td>
+<td>서</td>
+<td><script>writeWindSpeed('2.0', false, '', '', 1);</script></td>
+<td>1014.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=257">양산시</a></td>
+<td> </td>
+<td>19.0</td>
+<td> </td>
+<td> </td>
+<td>28.2</td>
+<td>13.3</td>
+<td>27.3</td>
+<td> </td>
+<td>40</td>
+<td>남서</td>
+<td><script>writeWindSpeed('2.5', false, '', '', 1);</script></td>
+<td>1014.0</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=202">양평</a></td>
+<td> </td>
+<td>16.3</td>
+<td> </td>
+<td> </td>
+<td>23.5</td>
+<td>15.5</td>
+<td>24.6</td>
+<td>0.3</td>
+<td>61</td>
+<td>북북서</td>
+<td><script>writeWindSpeed('1.2', false, '', '', 1);</script></td>
+<td>1015.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=168">여수</a></td>
+<td>구름조금</td>
+<td>20 이상</td>
+<td>3</td>
+<td>0</td>
+<td>25.0</td>
+<td>9.6</td>
+<td>24.1</td>
+<td> </td>
+<td>38</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('2.2', false, '', '', 1);</script></td>
+<td>1014.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=252">영광군</a></td>
+<td> </td>
+<td>11.3</td>
+<td> </td>
+<td> </td>
+<td>28.5</td>
+<td>11.1</td>
+<td>27.0</td>
+<td> </td>
+<td>34</td>
+<td>남서</td>
+<td><script>writeWindSpeed('2.2', false, '', '', 1);</script></td>
+<td>1013.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=277">영덕</a></td>
+<td> </td>
+<td>19.9</td>
+<td> </td>
+<td> </td>
+<td>21.0</td>
+<td>14.1</td>
+<td>22.4</td>
+<td> </td>
+<td>65</td>
+<td>남남동</td>
+<td><script>writeWindSpeed('3.3', false, '', '', 1);</script></td>
+<td>1014.0</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=121">영월</a></td>
+<td> </td>
+<td>19.2</td>
+<td> </td>
+<td> </td>
+<td>23.2</td>
+<td>14.2</td>
+<td>23.9</td>
+<td> </td>
+<td>57</td>
+<td>북북서</td>
+<td><script>writeWindSpeed('2.5', false, '', '', 1);</script></td>
+<td>1013.8</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=272">영주</a></td>
+<td> </td>
+<td>14.3</td>
+<td> </td>
+<td> </td>
+<td>23.3</td>
+<td>15.3</td>
+<td>24.4</td>
+<td> </td>
+<td>61</td>
+<td>남남동</td>
+<td><script>writeWindSpeed('1.4', false, '', '', 1);</script></td>
+<td>1014.2</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=281">영천</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.2</td>
+<td>14.3</td>
+<td>26.1</td>
+<td> </td>
+<td>48</td>
+<td>서북서</td>
+<td><script>writeWindSpeed('1.2', false, '', '', 1);</script></td>
+<td>1014.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=170">완도</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>25.8</td>
+<td>13.2</td>
+<td>25.6</td>
+<td> </td>
+<td>46</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('3.1', false, '', '', 1);</script></td>
+<td>1014.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=115">울릉도</a></td>
+<td>구름많음</td>
+<td>20 이상</td>
+<td>7</td>
+<td>3</td>
+<td>18.9</td>
+<td>16.4</td>
+<td>21.6</td>
+<td> </td>
+<td>86</td>
+<td>남서</td>
+<td><script>writeWindSpeed('2.6', false, '', '', 1);</script></td>
+<td>1014.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=152">울산</a></td>
+<td>구름많음</td>
+<td>20 이상</td>
+<td>6</td>
+<td>0</td>
+<td>24.5</td>
+<td>9.6</td>
+<td>23.7</td>
+<td> </td>
+<td>39</td>
+<td>남남동</td>
+<td><script>writeWindSpeed('1.6', false, '', '', 1);</script></td>
+<td>1014.2</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=130">울진</a></td>
+<td> </td>
+<td>19.7</td>
+<td> </td>
+<td> </td>
+<td>19.5</td>
+<td>17.0</td>
+<td>22.3</td>
+<td> </td>
+<td>86</td>
+<td>남남서</td>
+<td><script>writeWindSpeed('1.8', false, '', '', 1);</script></td>
+<td>1013.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=114">원주</a></td>
+<td> </td>
+<td>16.8</td>
+<td> </td>
+<td> </td>
+<td>24.2</td>
+<td>14.5</td>
+<td>24.8</td>
+<td>0.0</td>
+<td>55</td>
+<td>서북서</td>
+<td><script>writeWindSpeed('3.1', false, '', '', 1);</script></td>
+<td>1014.0</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=263">의령군</a></td>
+<td> </td>
+<td>14.6</td>
+<td> </td>
+<td> </td>
+<td>27.4</td>
+<td>15.0</td>
+<td>27.2</td>
+<td> </td>
+<td>47</td>
+<td>동</td>
+<td><script>writeWindSpeed('1.7', false, '', '', 1);</script></td>
+<td>1013.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=278">의성</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>25.5</td>
+<td>14.9</td>
+<td>25.8</td>
+<td> </td>
+<td>52</td>
+<td>서북서</td>
+<td><script>writeWindSpeed('1.7', false, '', '', 1);</script></td>
+<td>1013.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=203">이천</a></td>
+<td> </td>
+<td>15.5</td>
+<td> </td>
+<td> </td>
+<td>24.9</td>
+<td>15.7</td>
+<td>25.6</td>
+<td>0.4</td>
+<td>57</td>
+<td>서</td>
+<td><script>writeWindSpeed('1.4', false, '', '', 1);</script></td>
+<td>1014.8</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=211">인제</a></td>
+<td> </td>
+<td>10.8</td>
+<td> </td>
+<td> </td>
+<td>22.1</td>
+<td>15.9</td>
+<td>23.7</td>
+<td>2.5</td>
+<td>68</td>
+<td>남</td>
+<td><script>writeWindSpeed('1.9', false, '', '', 1);</script></td>
+<td>1014.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=112">인천</a></td>
+<td>연무</td>
+<td>5.9</td>
+<td>9</td>
+<td>1</td>
+<td>21.9</td>
+<td>13.5</td>
+<td>22.8</td>
+<td>0.8</td>
+<td>59</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('2.8', false, '', '', 1);</script></td>
+<td>1014.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=244">임실</a></td>
+<td> </td>
+<td>19.5</td>
+<td> </td>
+<td> </td>
+<td>26.0</td>
+<td>11.3</td>
+<td>25.2</td>
+<td> </td>
+<td>40</td>
+<td>남서</td>
+<td><script>writeWindSpeed('2.0', false, '', '', 1);</script></td>
+<td>1013.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=248">장수</a></td>
+<td> </td>
+<td>19.3</td>
+<td> </td>
+<td> </td>
+<td>26.1</td>
+<td>13.8</td>
+<td>26.0</td>
+<td> </td>
+<td>47</td>
+<td>남남서</td>
+<td><script>writeWindSpeed('2.1', false, '', '', 1);</script></td>
+<td>1012.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=260">장흥</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>25.7</td>
+<td>11.4</td>
+<td>25.0</td>
+<td> </td>
+<td>41</td>
+<td>남동</td>
+<td><script>writeWindSpeed('4.8', false, '', '', 1);</script></td>
+<td>1013.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=146">전주</a></td>
+<td>구름조금</td>
+<td>20 이상</td>
+<td>5</td>
+<td>0</td>
+<td>28.4</td>
+<td>14.6</td>
+<td>27.8</td>
+<td> </td>
+<td>43</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('1.1', false, '', '', 1);</script></td>
+<td>1013.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=217">정선군</a></td>
+<td> </td>
+<td>13.9</td>
+<td> </td>
+<td> </td>
+<td>24.3</td>
+<td>14.3</td>
+<td>24.8</td>
+<td> </td>
+<td>54</td>
+<td>북동</td>
+<td><script>writeWindSpeed('5.4', false, '', '', 1);</script></td>
+<td>1012.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=245">정읍</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>27.8</td>
+<td>9.5</td>
+<td>26.1</td>
+<td> </td>
+<td>32</td>
+<td>남서</td>
+<td><script>writeWindSpeed('2.2', false, '', '', 1);</script></td>
+<td>1013.2</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=184">제주</a></td>
+<td>맑음</td>
+<td>20 이상</td>
+<td>2</td>
+<td>0</td>
+<td>23.8</td>
+<td>17.7</td>
+<td>25.4</td>
+<td> </td>
+<td>69</td>
+<td>북동</td>
+<td><script>writeWindSpeed('4.6', false, '', '', 1);</script></td>
+<td>1013.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=221">제천</a></td>
+<td> </td>
+<td>11.9</td>
+<td> </td>
+<td> </td>
+<td>23.7</td>
+<td>14.1</td>
+<td>24.3</td>
+<td>0.0</td>
+<td>55</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('1.8', false, '', '', 1);</script></td>
+<td>1013.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=268">진도군</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>25.8</td>
+<td>12.2</td>
+<td>25.3</td>
+<td> </td>
+<td>43</td>
+<td>남</td>
+<td><script>writeWindSpeed('2.7', false, '', '', 1);</script></td>
+<td>1013.2</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=192">진주</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.6</td>
+<td>14.0</td>
+<td>26.4</td>
+<td> </td>
+<td>46</td>
+<td>서북서</td>
+<td><script>writeWindSpeed('1.1', false, '', '', 1);</script></td>
+<td>1014.2</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=155">창원</a></td>
+<td>구름조금</td>
+<td>20 이상</td>
+<td>4</td>
+<td>0</td>
+<td>25.9</td>
+<td>10.0</td>
+<td>24.8</td>
+<td> </td>
+<td>37</td>
+<td>남</td>
+<td><script>writeWindSpeed('2.5', false, '', '', 1);</script></td>
+<td>1014.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=232">천안</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>24.9</td>
+<td>14.3</td>
+<td>25.2</td>
+<td> </td>
+<td>52</td>
+<td>서</td>
+<td><script>writeWindSpeed('2.5', false, '', '', 1);</script></td>
+<td>1015.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=95">철원</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>20.8</td>
+<td>19.6</td>
+<td>24.0</td>
+<td>4.8</td>
+<td>93</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('1.1', false, '', '', 1);</script></td>
+<td>1015.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=276">청송군</a></td>
+<td> </td>
+<td>15.3</td>
+<td> </td>
+<td> </td>
+<td>25.0</td>
+<td>15.3</td>
+<td>25.6</td>
+<td> </td>
+<td>55</td>
+<td>북북동</td>
+<td><script>writeWindSpeed('2.0', false, '', '', 1);</script></td>
+<td>1013.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=131">청주</a></td>
+<td>구름많음</td>
+<td>20 이상</td>
+<td>6</td>
+<td>1</td>
+<td>25.8</td>
+<td>14.8</td>
+<td>26.0</td>
+<td> </td>
+<td>51</td>
+<td>서북서</td>
+<td><script>writeWindSpeed('1.9', false, '', '', 1);</script></td>
+<td>1014.8</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=135">추풍령</a></td>
+<td> </td>
+<td>17.1</td>
+<td> </td>
+<td> </td>
+<td>24.2</td>
+<td>15.1</td>
+<td>24.9</td>
+<td> </td>
+<td>57</td>
+<td>북북서</td>
+<td><script>writeWindSpeed('1.8', false, '', '', 1);</script></td>
+<td>1013.1</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=101">춘천</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>21.9</td>
+<td>15.9</td>
+<td>23.5</td>
+<td>2.4</td>
+<td>69</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('2.1', false, '', '', 1);</script></td>
+<td>1014.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=127">충주</a></td>
+<td> </td>
+<td>18.4</td>
+<td> </td>
+<td> </td>
+<td>25.3</td>
+<td>15.8</td>
+<td>25.9</td>
+<td>0.0</td>
+<td>56</td>
+<td>서</td>
+<td><script>writeWindSpeed('2.6', false, '', '', 1);</script></td>
+<td>1014.2</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=216">태백</a></td>
+<td> </td>
+<td>19.6</td>
+<td> </td>
+<td> </td>
+<td>23.5</td>
+<td>10.1</td>
+<td>23.1</td>
+<td> </td>
+<td>43</td>
+<td>남남서</td>
+<td><script>writeWindSpeed('3.0', false, '', '', 1);</script></td>
+<td>1010.5</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=162">통영</a></td>
+<td> </td>
+<td>18.6</td>
+<td> </td>
+<td> </td>
+<td>26.1</td>
+<td>12.5</td>
+<td>25.6</td>
+<td> </td>
+<td>43</td>
+<td>남</td>
+<td><script>writeWindSpeed('2.5', false, '', '', 1);</script></td>
+<td>1014.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=99">파주</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>20.1</td>
+<td>16.3</td>
+<td>22.4</td>
+<td>3.7</td>
+<td>79</td>
+<td>북서</td>
+<td><script>writeWindSpeed('1.7', false, '', '', 1);</script></td>
+<td>1015.9</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=138">포항</a></td>
+<td>구름많음</td>
+<td>20 이상</td>
+<td>7</td>
+<td>0</td>
+<td>23.7</td>
+<td>12.6</td>
+<td>23.9</td>
+<td> </td>
+<td>50</td>
+<td>동북동</td>
+<td><script>writeWindSpeed('3.2', false, '', '', 1);</script></td>
+<td>1014.6</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=264">함양군</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>26.4</td>
+<td>12.0</td>
+<td>25.7</td>
+<td> </td>
+<td>41</td>
+<td>북북동</td>
+<td><script>writeWindSpeed('2.1', false, '', '', 1);</script></td>
+<td>1013.4</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=285">합천</a></td>
+<td> </td>
+<td>19.4</td>
+<td> </td>
+<td> </td>
+<td>26.5</td>
+<td>14.2</td>
+<td>26.3</td>
+<td> </td>
+<td>47</td>
+<td>남</td>
+<td><script>writeWindSpeed('1.0', false, '', '', 1);</script></td>
+<td>1013.7</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=261">해남</a></td>
+<td> </td>
+<td>19.7</td>
+<td> </td>
+<td> </td>
+<td>26.6</td>
+<td>12.2</td>
+<td>25.9</td>
+<td> </td>
+<td>41</td>
+<td>동남동</td>
+<td><script>writeWindSpeed('5.3', false, '', '', 1);</script></td>
+<td>1013.8</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=177">홍성</a></td>
+<td>구름많음</td>
+<td>20 이상</td>
+<td>7</td>
+<td>0</td>
+<td>25.2</td>
+<td>13.0</td>
+<td>25.1</td>
+<td> </td>
+<td>47</td>
+<td>서남서</td>
+<td><script>writeWindSpeed('2.9', false, '', '', 1);</script></td>
+<td>1015.0</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=212">홍천</a></td>
+<td> </td>
+<td>20 이상</td>
+<td> </td>
+<td> </td>
+<td>23.5</td>
+<td>14.4</td>
+<td>24.2</td>
+<td>0.8</td>
+<td>57</td>
+<td>서</td>
+<td><script>writeWindSpeed('3.0', false, '', '', 1);</script></td>
+<td>1014.2</td>
+</tr>
+<tr>
+<td><a href="/weather/observation/currentweather.jsp?tm=2021.6.1.13:00&amp;type=t99&amp;mode=0&amp;reg=100&amp;auto_man=m&amp;stn=169">흑산도</a></td>
+<td>맑음</td>
+<td>20 이상</td>
+<td>0</td>
+<td>0</td>
+<td>24.9</td>
+<td>17.1</td>
+<td>26.0</td>
+<td> </td>
+<td>62</td>
+<td>남</td>
+<td><script>writeWindSpeed('4.3', false, '', '', 1);</script></td>
+<td>1013.4</td>
+</tr>
+</tbody>
+</table>
